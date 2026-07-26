@@ -1,0 +1,21 @@
+{
+  "name": "smart-contract-security-labs",
+  "version": "1.0.0",
+  "description": "Hands-on labs reproducing four famous smart-contract hacks (The DAO, Ronin, Wormhole, Poly Network) with vulnerable contracts, exploits, fixes, and tests. Educational use on a local Hardhat network only.",
+  "license": "MIT",
+  "scripts": {
+    "test": "hardhat test",
+    "test:reentrancy": "hardhat test test/01-reentrancy.test.js",
+    "test:access": "hardhat test test/02-access-control.test.js",
+    "test:signature": "hardhat test test/03-signature-verification.test.js",
+    "test:privilege": "hardhat test test/04-privilege-trap.test.js",
+    "compile": "hardhat compile"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.10"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.2"
+  }
+}
